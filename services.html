@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Послуги фахівців: ветеринари та кінологи на порталі Світ улюбленців">
+    <meta name="keywords" content="ветеринар, кінолог, лікування тварин, дресирування собак, запис до лікаря">
+    <meta name="author" content="Самбуріна Єва">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги фахівців - Світ улюбленців</title>
+    <!-- Підключення єдиного файлу стилів (Блок 1, Завдання 4) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Послуги фахівців</h1>
+        <p><i>Найкращі ветеринари та кінологи для ваших улюбленців!</i></p>
+    </header>
+
+    <!-- БЛОК 2, Завдання 1: Навігація з горизонтальним випадаючим меню -->
+    <nav>
+        <ul class="main-menu">
+            <li><a href="index.html">Головна (Каталог)</a>
+                <ul class="sub-menu">
+                    <li><a href="index.html#dogs">Собаки</a></li>
+                    <li><a href="index.html#cats">Коти</a></li>
+                </ul>
+            </li>
+            <li><a href="encyclopedia.html">Енциклопедія</a></li>
+            <li><a href="services.html">Послуги фахівців</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        
+      
+        <aside>
+            <h3>Швидка навігація</h3>
+            <!-- БЛОК 1: Маркований список, вкладений у нумерований -->
+            <ol>
+                <li>Наші фахівці
+                    <ul>
+                        <li><a href="#vet">Ветеринарна клініка</a></li>
+                        <li><a href="#kino">Кінологічний центр</a></li>
+                    </ul>
+                </li>
+                <li><a href="#form">Запис на прийом</a></li>
+            </ol>
+
+            <h3>Прайс-лист</h3>
+            <table border="1">
+                <tr>
+                    <th>Послуга</th>
+                    <th>Ціна</th>
+                </tr>
+                <tr>
+                    <td>Консультація ветеринара</td>
+                    <td>500 грн</td>
+                </tr>
+                <tr>
+                    <td>Комплексна вакцинація</td>
+                    <td>800 грн</td>
+                </tr>
+                <tr>
+                    <td>Групове заняття з кінологом</td>
+                    <td>400 грн</td>
+                </tr>
+                <tr>
+                    <td>Індивідуальне тренування</td>
+                    <td>700 грн</td>
+                </tr>
+            </table>
+        </aside>
+
+       
+        <section style="flex: 3;">
+            <h2>Наші професіонали готові допомогти</h2>
+
+            <!-- РОЗДІЛ: ВЕТЕРИНАРИ -->
+            <article id="vet">
+                <h3>⚕️ Ветеринарна клініка</h3>
+                <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?w=400" alt="Ветеринар" width="400" class="breed-img">
+                <p><b>Головний лікар:</b> Олена Іванівна. Досвід роботи понад 10 років.</p>
+                <p>Наші ветеринари проводять повний спектр послуг: від профілактичного огляду та вакцинації до складних хірургічних втручань. Сучасне обладнання дозволяє швидко та точно встановити діагноз.</p>
+
+               
+            </article>
+
+            <hr>
+
+            <!-- РОЗДІЛ: КІНОЛОГИ -->
+            <article id="kino">
+                <h3>🐕 Кінологічний центр</h3>
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400" alt="Кінолог" width="400" class="breed-img">
+                <p><b>Провідний кінолог:</b> Максим Сергійович. Спеціаліст із корекції поведінки.</p>
+                <p>Пропонуємо індивідуальні та групові заняття. Ми навчимо вашого собаку базовим командам, слухняності під час прогулянок та допоможемо вирішити проблеми з агресією чи страхами.</p>
+
+                <!-- БЛОК 2, Завдання 3: Відео з елементами управління -->
+                <h4>Відео: Приклад тренування собаки</h4>
+                
+                <object width="420" height="315" data="https://www.youtube.com/v/c4occJwwpKQ"></object>
+
+               
+            </article>
+
+            <hr>
+
+            <!-- РОЗДІЛ: ФОРМА -->
+            <article id="form">
+                <h2>📅 Записатися на прийом</h2>
+                <p>Заповніть заявку, щоб забронювати час у ветеринара або кінолога. Ми зв'яжемося з вами найближчим часом.</p>
+                
+                <!-- БЛОК 2, Завдання 4: Форма з типами datetime, email, tel, url та валідацією required -->
+                <form action="#" method="POST" class="styled-form">
+
+                    <label for="user-email">Ваш Email (обов'язково):</label><br>
+                    <input type="email" id="user-email" name="email" required placeholder="mail@example.com"><br><br>
+
+                    <label for="user-phone">Ваш телефон (обов'язково):</label><br>
+                    <input type="tel" id="user-phone" name="phone" required placeholder="+380991234567"><br><br>
+
+                    <label for="user-url">Посилання на вашу соцмережу (Instagram/Facebook):</label><br>
+                    <input type="url" id="user-url" name="social_url" placeholder="https://instagram.com/ваша_сторінка"><br><br>
+
+                    <label for="meeting-time">Бажана дата та час візиту:</label><br>
+                    <input type="datetime-local" id="meeting-time" name="meeting_time" required><br><br>
+
+                    <button type="submit">Відправити заявку</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Світ улюбленців. </p>
+    </footer>
+</body>
+</html>

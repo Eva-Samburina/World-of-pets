@@ -1,0 +1,133 @@
+
+
+body {
+    font-family: Arial, sans-serif; /* Шрифти */
+    background-color: #f4f6f8;      /* Колір фону (спрацює, якщо картинка не завантажиться) */
+    
+    /* ДОДАНО: Фонова картинка (Блок 1, Завдання 2) */
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); 
+    
+    color: #333;                    /* Колір тексту */
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+   БЛОК 3, ЗАВДАННЯ 1: Градієнт, тінь тексту та прозорість (rgba)
+    */
+header {
+    /* Лінійний градієнт для фону шапки */
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    color: white;
+    text-align: center; /* Вирівнювання (Блок 1) */
+    padding: 20px;
+    /* Тінь тексту з прозорістю 50% (0.5) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/* 
+   БЛОК 1, ЗАВДАННЯ 5: Списки (list-style)
+    */
+nav {
+    background-color: #333;
+}
+.main-menu, .sub-menu {
+    list-style: none; /* Прибираємо стандартні маркери списків */
+    padding: 0;
+    margin: 0;
+}
+.main-menu {
+    display: flex; 
+}
+.main-menu > li {
+    position: relative;
+}
+.main-menu a {
+    display: block;
+    padding: 15px 20px;
+    color:white;
+    text-decoration: none;
+}
+.main-menu a:hover {
+    background-color: #555;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    /* БЛОК 3, ЗАВДАННЯ 1: Тінь блоку для випадаючого меню */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.main-menu > li:hover .sub-menu {
+    display: block;
+}
+
+/* 
+   БЛОК 1, ЗАВДАННЯ 5: Кордони, рамки та селектори тегів
+   */
+article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Кордони (рамки) блоку */
+    border-radius: 8px;     /* Закруглення кутів */
+    /* БЛОК 3, ЗАВДАННЯ 1: Тінь блоку з напівпрозорим чорним кольором */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* БЛОК 3, ЗАВДАННЯ 1: Прозорість (opacity) до зображень */
+.breed-img {
+    transition: opacity 0.3s ease;
+}
+.breed-img:hover {
+    opacity: 0.8; /* Зображення стає трохи прозорим при наведенні */
+}
+
+/* 
+   БЛОК 1, ЗАВДАННЯ 5: Класи та ID-селектори
+   ========================================================================== */
+/* Клас-селектор для стилізації складної форми */
+.styled-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.styled-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* БЛОК 1, ЗАВДАННЯ 5: Курсори */
+.styled-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Зміна курсору на «руку» при наведенні на кнопку */
+    margin-top: 15px;
+}
+.styled-form button:hover {
+    background-color: #45a049;
+}
+
+/* ID-селектори для секцій на сторінці послуг */
+#vet, #kino, #form {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
