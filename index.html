@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    
     <meta charset="utf-8">
-    <meta name="description" content="Світ улюбленців - каталог домашніх тварин, оголошення, продаж цуценят та кошенят">
-    <meta name="keywords" content="тварини, коти, собаки, птахи, гризуни, рибки, купити">
+    <meta name="description" content="Світ улюбленців - каталог домашніх тварин">
     <meta name="author" content="Самбуріна Єва">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Світ улюбленців - Головна та Каталог</title>
-   
+    <title>Світ улюбленців - Каталог</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
-    <header>
-        <h1>Світ улюбленців</h1>
-        <p><i>Ваш найкращий помічник у виборі домашнього друга!</i></p>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Світ улюбленців</h1>
+        <p class="header__subtitle"><i>Ваш найкращий помічник у виборі домашнього друга!</i></p>
     </header>
 
-    
     <nav>
         <ul class="main-menu">
             <li><a href="index.html">Головна (Каталог)</a>
@@ -29,34 +24,32 @@
             </li>
             <li><a href="encyclopedia.html">Енциклопедія</a></li>
             <li><a href="services.html">Послуги фахівців</a></li>
+            <!-- ОСЬ НАША НОВА КНОПКА ДЛЯ ГАЛЕРЕЇ -->
+            <li><a href="gallery.html">Фотогалерея</a></li>
         </ul>
     </nav>
 
-   
-    <main>
-       
-        <aside>
-            <h3>Швидка навігація по каталогу</h3>
-          
-            <ol>
-                <li>Ссавці
-                    <ul>
-                        <li><a href="#dogs">Цуценята (Собаки)</a></li>
-                        <li><a href="#cats">Кошенята (Коти)</a></li>
-                        <li><a href="#rodents">Гризуни</a></li>
+    <main class="main-content">
+        <aside class="sidebar">
+            <h3 class="sidebar__title">Швидка навігація по каталогу</h3>
+            <ol class="sidebar__list">
+                <li class="sidebar__item">Ссавці
+                    <ul class="sidebar__sublist">
+                        <li class="sidebar__subitem"><a href="#dogs">Цуценята (Собаки)</a></li>
+                        <li class="sidebar__subitem"><a href="#cats">Кошенята (Коти)</a></li>
+                        <li class="sidebar__subitem"><a href="#rodents">Гризуни</a></li>
                     </ul>
                 </li>
-                <li>Інші
-                    <ul>
-                        <li><a href="#birds">Птахи</a></li>
-                        <li><a href="#fish">Рибки</a></li>
+                <li class="sidebar__item">Інші
+                    <ul class="sidebar__sublist">
+                        <li class="sidebar__subitem"><a href="#birds">Птахи</a></li>
+                        <li class="sidebar__subitem"><a href="#fish">Рибки</a></li>
                     </ul>
                 </li>
             </ol>
-            
-            <h3>Статистика порталу</h3>
-           
-            <table border="1">
+
+            <h3 class="sidebar__title">Статистика порталу</h3>
+            <table border="1" class="sidebar__table">
                 <tr>
                     <th>Категорія</th>
                     <th>Оголошень</th>
@@ -67,116 +60,149 @@
             </table>
         </aside>
 
-        <section id="catalog">
-            <h2>Каталог тварин</h2>
+        <section class="catalog" id="catalog">
+            <h2 class="catalog__title">Каталог тварин</h2>
 
-           
-            <section id="dogs">
-                <h3>🐶 Цуценята</h3>
-                <article>
-                    <h4>Щеня Вельш-коргі</h4>
-                    <img src="https://delo-korm.ru/upload/medialibrary/e2e/%D0%BA%D0%BE%D1%80%D0%B6%D0%B8%D0%BA.jpg?"height="250" alt="Щеня коргі">
-                    <p><b>Характеристика:</b> Вік - 2 місяці. Дуже грайливий та активний хлопчик. Має документи КСУ.</p>
+            <!-- СОБАКИ -->
+            <section class="category" id="dogs">
+                <h3 class="category__title">🐶 Цуценята</h3>
+                <div class="category__nav">
+                    <a href="#corgi" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Коргі</a>
+                    <a href="#husky" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Хаскі</a>
+                    <a href="#pug" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px;">Мопс</a>
+                </div>
+
+                <article class="card" id="corgi">
+                    <h4 class="card__title">Щеня Вельш-коргі</h4>
+                    <img src="https://images.unsplash.com/photo-1597633425046-08f5110420b5?w=400"  height="250" alt="Щеня коргі" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік - 2 місяці. Дуже грайливий та активний хлопчик. Має документи КСУ.</p>
+                    <a href="encyclopedia.html#corgi-info" style="display:inline-block; padding:10px 15px; background-color:#FFCC80; color:white; text-decoration:none; border-radius:5px; margin-top:10px; font-weight:bold;">📖 Детальніше про породу</a>
                 </article>
-                <article>
-                    <h4>Щеня Хаскі</h4>
-                    <img src="https://petadvice.co.ua/wp-content/uploads/2020/04/husky-2.jpg?"height="250" alt="Щеня хаскі">
-                    <p><b>Характеристика:</b> Вік - 3 місяці. Блакитноока дівчинка, вакцинована за віком.</p>
+                <article class="card" id="husky">
+                    <h4 class="card__title">Щеня Хаскі</h4>
+                    <img src="https://petadvice.co.ua/wp-content/uploads/2020/04/husky-2.jpg?" height="250" alt="Щеня хаскі" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік - 3 місяці. Блакитноока дівчинка, вакцинована за віком.</p>
                 </article>
-                <article>
-                    <h4>Щеня Мопса</h4>
-                    <img src="https://domashnij-zapovednik.com/wp-content/uploads/2018/09/mal.vTdqk_.jpg" alt="Щеня мопса">
-                    <p><b>Характеристика:</b> Вік - 1.5 місяці. Ласкавий та спокійний характер, ідеально для квартири.</p>
+                <article class="card" id="pug">
+                    <h4 class="card__title">Щенята Мопса</h4>
+                    <img src="https://domashnij-zapovednik.com/wp-content/uploads/2018/09/mal.vTdqk_.jpg" alt="Щеня мопса" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік - 1.5 місяці. Ласкаві та зі спокійним характером, ідеально для квартири.</p>
                 </article>
             </section>
 
-           
-            <section id="cats">
-                <h3>🐱 Кошенята</h3>
-                <article>
-                    <h4>Кошеня Мейн-кун</h4>
-                    <img src="https://lbcat.com.ua/images/Anthony1.jpg"height="250"  alt="Кошеня мейн-кун">
-                    <p><b>Характеристика:</b> Вік - 3 місяці. Великі китиці на вухах, привчений до лотка.</p>
+            <!-- КОТИ -->
+            <section class="category" id="cats">
+                <h3 class="category__title">🐱 Кошенята</h3>
+                 <div class="category__nav">
+                    <a href="#maine" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Мейн-кун</a>
+                    <a href="#british" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Британська</a>
+                    <a href="#scottish" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px;">Шотландська</a>
+                </div>
+                <article class="card" id="maine">
+                    <h4 class="card__title">Кошеня Мейн-кун</h4>
+                    <img src="https://lbcat.com.ua/images/Anthony1.jpg" height="250" alt="Кошеня мейн-кун" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік - 3 місяці. Великі китиці на вухах, привчений до лотка.</p>
                 </article>
-                <article>
-                    <h4>Британське короткошерсте кошеня</h4>
-                    <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=200" alt="Британське кошеня">
-                    <p><b>Характеристика:</b> Вік - 2 місяці. Плюшева шерсть, ліловий окрас, дуже контактний.</p>
+                <article class="card" id="british">
+                    <h4 class="card__title">Британське короткошерсте кошеня</h4>
+                    <img src="https://murlo.org/uk/wp-content/uploads/2014/12/%D0%91%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B5-%D0%B3%D0%BE%D0%BB%D1%83%D0%B1%D0%B5-%D0%BA%D0%BE%D1%88%D0%B5%D0%BD%D1%8F-%D1%84%D0%BE%D1%82%D0%BE.jpg"height="250" alt="Британське кошеня" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік - 2 місяці. Плюшева шерсть, ліловий окрас, дуже контактний.</p>
+                    <a href="encyclopedia.html#british-info" style="display:inline-block; padding:10px 15px; background-color:#FFCC80; color:white; text-decoration:none; border-radius:5px; margin-top:10px; font-weight:bold;">📖 Детальніше про породу</a>
                 </article>
-                <article>
-                    <h4>Шотландське висловухе кошеня</h4>
-                    <img src="https://shotlandskie-kotyata.com.ua/wp-content/uploads/2023/09/dsc1158-954x1024.jpg?"height="250"  alt="Шотландське кошеня">
-                    <p><b>Характеристика:</b> Вік - 2.5 місяці. Грайлива дівчинка, їсть сухий корм.</p>
-                </article>
-            </section>
-
-            
-            <section id="birds">
-                <h3>🦜 Птахи</h3>
-                <article>
-                    <h4>Папуга Корела</h4>
-                    <img src="https://trtmo.te.ua/wp-content/uploads/2025/11/papuga-korela.jpg?" height="250" alt="Корела">
-                    <p><b>Характеристика:</b> Молодий папуга, починає насвистувати мелодії, ручний.</p>
-                </article>
-                <article>
-                    <h4>Хвилястий папуга</h4>
-                    <img src="https://bigzoo.com.ua/image/cache/catalog/Animals/Popugai/malenkiye/volnistyye/volnistyy_siniy-750x750-product_thumb.jpg?" height="250" alt="Хвилястий папуга">
-                    <p><b>Характеристика:</b> Блакитний окрас, вік 4 місяці, легко навчається розмові.</p>
-                </article>
-                <article>
-                    <h4>Тукан</h4>
-                    <img src="https://images.unsplash.com/photo-1550853024-fae8cd4be47f?w=200" alt="Тукан">
-                    <p><b>Характеристика: </b>Екзотична пташка тукан,вік 3 роки .</b> </p>
+                <article class="card" id="scottish">
+                    <h4 class="card__title">Шотландське висловухе кошеня</h4>
+                    <img src="https://shotlandskie-kotyata.com.ua/wp-content/uploads/2023/09/dsc1158-954x1024.jpg?" height="250" alt="Шотландське кошеня" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік - 2.5 місяці. Грайлива дівчинка, їсть сухий корм.</p>
                 </article>
             </section>
 
-            
-            <section id="rodents">
-                <h3>🐹 Гризуни</h3>
-                <article>
-                    <h4>Сирійський хом'як</h4>
-                    <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=200" alt="Хом'як">
-                    <p><b>Характеристика:</b> Пухнастий, ручний, вік 1 місяць. Активний вночі.</p>
+            <!-- ПТАХИ -->
+            <section class="category" id="birds">
+                <h3 class="category__title">🦜 Птахи</h3>
+                 <div class="category__nav">
+                    <a href="#corella" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Корела</a>
+                    <a href="#budgie" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Хвилястий</a>
+                    <a href="#toucan" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px;">Тукан</a>
+                </div>
+                <article class="card" id="corella">
+                    <h4 class="card__title">Папуга Корела</h4>
+                    <img src="https://trtmo.te.ua/wp-content/uploads/2025/11/papuga-korela.jpg?" height="250" alt="Корела" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Молодий папуга, починає насвистувати мелодії, ручний.</p>
+                    <a href="encyclopedia.html#corella-info" style="display:inline-block; padding:10px 15px; background-color:#FFCC80; color:white; text-decoration:none; border-radius:5px; margin-top:10px; font-weight:bold;">📖 Детальніше про породу</a>
                 </article>
-                <article>
-                    <h4>Морська свинка</h4>
-                    <img src="https://terra.vet/wp-content/uploads/22-35.jpg?"height="250"  alt="Морська свинка">
-                    <p><b>Характеристика:</b>  Вік 2 місяці, обожнює свіжі овочі.</p>
+                <article class="card" id="budgie">
+                    <h4 class="card__title">Хвилястий папуга</h4>
+                    <img src="https://bigzoo.com.ua/image/cache/catalog/Animals/Popugai/malenkiye/volnistyye/volnistyy_siniy-750x750-product_thumb.jpg?" height="250" alt="Хвилястий папуга" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Блакитний окрас, вік 4 місяці, легко навчається розмові.</p>
                 </article>
-                <article>
-                    <h4>Шиншила</h4>
-                    <img src="https://cdn.e-pet.com.ua/uploaded/2026/4/17/18/%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_viber_2026-04-17_21-41-24-716-GH0wzEMO.jpg?" height="250" alt="Шиншила">
-                    <p><b>Характеристика:</b> Окрас стандарт. Вік 4 місяці. Дуже м'яка шерсть.</p>
+                <article class="card" id="toucan">
+                    <h4 class="card__title">Тукан</h4>
+                    <img src="https://images.unsplash.com/photo-1550853024-fae8cd4be47f?w=200" alt="Тукан" class="card__image">
+                    <p class="card__desc"><b>Характеристика: </b>Екзотична пташка тукан, вік 3 роки.</p>
                 </article>
             </section>
 
-           
-            <section id="fish">
-                <h3>🐠 Рибки</h3>
-                <article>
-                    <h4>Золота рибка</h4>
-                    <img src="https://blog.tetra.net/uk-ua/wp-content/uploads/2020/12/zolota-rybka.jpg?" height="250" alt="Золота рибка">
-                    <p><b>Характеристика:</b> Класична акваріумна рибка, потребує акваріума від 50 літрів.</p>
+            <!-- ГРИЗУНИ -->
+            <section class="category" id="rodents">
+                <h3 class="category__title">🐹 Гризуни</h3>
+                <div class="category__nav">
+                    <a href="#hamster" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Хом'як</a>
+                    <a href="#guinea" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Морська свинка</a>
+                    <a href="#chinchilla" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px;">Шиншила</a>
+                </div>
+                <article class="card" id="hamster">
+                    <h4 class="card__title">Сирійський хом'як</h4>
+                    <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=200" alt="Хом'як" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Пухнастий, ручний, вік 1 місяць. Активний вночі.</p>
                 </article>
-                <article>
-                    <h4>Півник (Бетта)</h4>
-                    <img src="https://images.prom.ua/5785927025_w1280_h640_5785927025.jpg" height="250" alt="Рибка півник">
-                    <p><b>Характеристика:</b> Самець з розкішними червоними плавцями. Можна тримати окремо.</p>
+                <article class="card" id="guinea">
+                    <h4 class="card__title">Морська свинка</h4>
+                    <img src="https://terra.vet/wp-content/uploads/22-35.jpg?" height="250" alt="Морська свинка" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Вік 2 місяці, обожнює свіжі овочі.</p>
+                    <a href="encyclopedia.html#guinea-pig-info" style="display:inline-block; padding:10px 15px; background-color:#FFCC80; color:white; text-decoration:none; border-radius:5px; margin-top:10px; font-weight:bold;">📖 Детальніше про породу</a>
                 </article>
-                <article>
-                    <h4>Гуппі</h4>
-                    <img src="https://blog.tetra.net/uk-ua/wp-content/uploads/2020/03/hupi-zovnishnii-vyhliad.jpg" height="250" alt="Гуппі">
-                    <p><b>Характеристика:</b> Зграйка яскравих рибок, ідеально підходять для початківців.</p>
+                <article class="card" id="chinchilla">
+                    <h4 class="card__title">Шиншила</h4>
+                    <img src="https://cdn.e-pet.com.ua/uploaded/2026/4/17/18/%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F_viber_2026-04-17_21-41-24-716-GH0wzEMO.jpg?" height="250" alt="Шиншила" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Окрас стандарт. Вік 4 місяці. Дуже м'яка шерсть.</p>
+                </article>
+            </section>
+
+            <!-- РИБКИ -->
+            <section class="category" id="fish">
+                <h3 class="category__title">🐠 Рибки</h3>
+                <div class="category__nav">
+                    <a href="#goldfish" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Золота рибка</a>
+                    <a href="#betta" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px; margin-right:5px;">Півник</a>
+                    <a href="#guppy" style="display:inline-block; padding:8px 12px; background:#B39DDB; color:white; text-decoration:none; border-radius:4px;">Гуппі</a>
+                </div>
+                <article class="card" id="goldfish">
+                    <h4 class="card__title">Золота рибка</h4>
+                    <img src="https://blog.tetra.net/uk-ua/wp-content/uploads/2020/12/zolota-rybka.jpg?" height="250" alt="Золота рибка" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Класична акваріумна рибка, потребує акваріума від 50 літрів.</p>
+                    <a href="encyclopedia.html#goldfish-info" style="display:inline-block; padding:10px 15px; background-color:#FFCC80; color:white; text-decoration:none; border-radius:5px; margin-top:10px; font-weight:bold;">📖 Детальніше про породу</a>
+                </article>
+                <article class="card" id="betta">
+                    <h4 class="card__title">Півник (Бетта)</h4>
+                    <img src="https://images.prom.ua/5785927025_w1280_h640_5785927025.jpg" height="250" alt="Рибка півник" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Самець з розкішними червоними плавцями. Можна тримати окремо.</p>
+                </article>
+                <article class="card" id="guppy">
+                    <h4 class="card__title">Гуппі</h4>
+                    <img src="https://blog.tetra.net/uk-ua/wp-content/uploads/2020/03/hupi-zovnishnii-vyhliad.jpg" height="250" alt="Гуппі" class="card__image">
+                    <p class="card__desc"><b>Характеристика:</b> Зграйка яскравих рибок, ідеально підходять для початківців.</p>
                 </article>
             </section>
 
         </section>
     </main>
 
-    
-    <footer>
-        <p>&copy; 2026 Світ улюбленців. Усі права захищені.</p>
-        
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Світ улюбленців. Усі права захищені.</p>
     </footer>
+
+    <!-- Fixed Елемент (Блок 2, Завдання 3) -->
+   
+    <a href="#" class="btn-up">🐾 Вгору</a>
 </body>
 </html>

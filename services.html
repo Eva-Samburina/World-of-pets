@@ -7,16 +7,14 @@
     <meta name="author" content="Самбуріна Єва">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Послуги фахівців - Світ улюбленців</title>
-    <!-- Підключення єдиного файлу стилів (Блок 1, Завдання 4) -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Послуги фахівців</h1>
-        <p><i>Найкращі ветеринари та кінологи для ваших улюбленців!</i></p>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title">Послуги фахівців</h1>
+        <p class="header__subtitle"><i>Найкращі ветеринари, кінологи та грумери для ваших улюбленців!</i></p>
     </header>
 
-    <!-- БЛОК 2, Завдання 1: Навігація з горизонтальним випадаючим меню -->
     <nav>
         <ul class="main-menu">
             <li><a href="index.html">Головна (Каталог)</a>
@@ -27,28 +25,27 @@
             </li>
             <li><a href="encyclopedia.html">Енциклопедія</a></li>
             <li><a href="services.html">Послуги фахівців</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
         </ul>
     </nav>
 
-    
-    <main>
+    <main class="main-content">
         
-      
-        <aside>
-            <h3>Швидка навігація</h3>
-            <!-- БЛОК 1: Маркований список, вкладений у нумерований -->
-            <ol>
+        <aside class="sidebar">
+            <h3 class="sidebar__title">Швидка навігація</h3>
+            <ol class="sidebar__list">
                 <li>Наші фахівці
-                    <ul>
+                    <ul class="sidebar__sublist">
                         <li><a href="#vet">Ветеринарна клініка</a></li>
                         <li><a href="#kino">Кінологічний центр</a></li>
+                        <li><a href="#groomer">Грумінг-салон</a></li>
                     </ul>
                 </li>
                 <li><a href="#form">Запис на прийом</a></li>
             </ol>
 
-            <h3>Прайс-лист</h3>
-            <table border="1">
+            <h3 class="sidebar__title">Прайс-лист</h3>
+            <table border="1" class="sidebar__table">
                 <tr>
                     <th>Послуга</th>
                     <th>Ціна</th>
@@ -69,70 +66,66 @@
                     <td>Індивідуальне тренування</td>
                     <td>700 грн</td>
                 </tr>
+                <tr>
+                    <td>Стрижка (Грумінг)</td>
+                    <td>650 грн</td>
+                </tr>
             </table>
         </aside>
 
-       
-        <section style="flex: 3;">
-            <h2>Наші професіонали готові допомогти</h2>
+        <section class="services">
+            <h2 class="services__title">Наші професіонали готові допомогти</h2>
 
-            <!-- РОЗДІЛ: ВЕТЕРИНАРИ -->
-            <article id="vet">
-                <h3>⚕️ Ветеринарна клініка</h3>
-                <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?w=400" alt="Ветеринар" width="400" class="breed-img">
-                <p><b>Головний лікар:</b> Олена Іванівна. Досвід роботи понад 10 років.</p>
-                <p>Наші ветеринари проводять повний спектр послуг: від профілактичного огляду та вакцинації до складних хірургічних втручань. Сучасне обладнання дозволяє швидко та точно встановити діагноз.</p>
-
-               
+            <article class="card" id="vet">
+                <h3 class="card__title">⚕️ Ветеринарна клініка</h3>
+                <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?w=400" alt="Ветеринар" width="400" class="card__image">
+                <p class="card__desc"><b>Головний лікар:</b> Олена Іванівна. Досвід роботи понад 10 років.</p>
+                <p class="card__text">Наші ветеринари проводять повний спектр послуг: від профілактичного огляду та вакцинації до складних хірургічних втручань. Сучасне обладнання дозволяє швидко та точно встановити діагноз.</p>
             </article>
 
-            <hr>
+            <article class="card" id="kino">
+                <h3 class="card__title">🐕 Кінологічний центр</h3>
+                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400" alt="Кінолог" width="400" class="card__image">
+                <p class="card__desc"><b>Провідний кінолог:</b> Максим Сергійович. Спеціаліст із корекції поведінки.</p>
+                <p class="card__text">Пропонуємо індивідуальні та групові заняття. Ми навчимо вашого собаку базовим командам, слухняності під час прогулянок та допоможемо вирішити проблеми з агресією чи страхами.</p>
 
-            <!-- РОЗДІЛ: КІНОЛОГИ -->
-            <article id="kino">
-                <h3>🐕 Кінологічний центр</h3>
-                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400" alt="Кінолог" width="400" class="breed-img">
-                <p><b>Провідний кінолог:</b> Максим Сергійович. Спеціаліст із корекції поведінки.</p>
-                <p>Пропонуємо індивідуальні та групові заняття. Ми навчимо вашого собаку базовим командам, слухняності під час прогулянок та допоможемо вирішити проблеми з агресією чи страхами.</p>
-
-                <!-- БЛОК 2, Завдання 3: Відео з елементами управління -->
-                <h4>Відео: Приклад тренування собаки</h4>
-                
+                <h4 class="card__subtitle">Відео: Приклад тренування собаки</h4>
                 <object width="420" height="315" data="https://www.youtube.com/v/c4occJwwpKQ"></object>
-
-               
             </article>
 
-            <hr>
+            <article class="card" id="groomer">
+                <h3 class="card__title">✂️ Грумінг-салон</h3>
+                <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=400" alt="Грумер" width="400" class="card__image">
+                <p class="card__text"><b>Майстер:</b> Анна. Професійна стрижка собак та котів, вичісування ковтунів, купання, догляд за кігтями та підготовка до виставок.</p>
+            </article>
 
-            <!-- РОЗДІЛ: ФОРМА -->
-            <article id="form">
-                <h2>📅 Записатися на прийом</h2>
-                <p>Заповніть заявку, щоб забронювати час у ветеринара або кінолога. Ми зв'яжемося з вами найближчим часом.</p>
-                
-                <!-- БЛОК 2, Завдання 4: Форма з типами datetime, email, tel, url та валідацією required -->
+            <article class="card form-card" id="form">
+                <h2 class="card__title">📅 Записатися на прийом</h2>
+                <p class="card__text">Заповніть заявку, щоб забронювати час у ветеринара, кінолога або грумера. Ми зв'яжемося з вами найближчим часом.</p>
+
                 <form action="#" method="POST" class="styled-form">
+                    <label class="form__label" for="user-email">Ваш Email (обов'язково):</label><br>
+                    <input class="form__input" type="email" id="user-email" name="email" required placeholder="mail@example.com"><br><br>
 
-                    <label for="user-email">Ваш Email (обов'язково):</label><br>
-                    <input type="email" id="user-email" name="email" required placeholder="mail@example.com"><br><br>
+                    <label class="form__label" for="user-phone">Ваш телефон (обов'язково):</label><br>
+                    <input class="form__input" type="tel" id="user-phone" name="phone" required placeholder="+380991234567"><br><br>
 
-                    <label for="user-phone">Ваш телефон (обов'язково):</label><br>
-                    <input type="tel" id="user-phone" name="phone" required placeholder="+380991234567"><br><br>
+                    <label class="form__label" for="user-url">Посилання на вашу соцмережу (Instagram/Facebook):</label><br>
+                    <input class="form__input" type="url" id="user-url" name="social_url" placeholder="https://instagram.com/ваша_сторінка"><br><br>
 
-                    <label for="user-url">Посилання на вашу соцмережу (Instagram/Facebook):</label><br>
-                    <input type="url" id="user-url" name="social_url" placeholder="https://instagram.com/ваша_сторінка"><br><br>
+                    <label class="form__label" for="meeting-time">Бажана дата та час візиту:</label><br>
+                    <input class="form__input" type="datetime-local" id="meeting-time" name="meeting_time" required><br><br>
 
-                    <label for="meeting-time">Бажана дата та час візиту:</label><br>
-                    <input type="datetime-local" id="meeting-time" name="meeting_time" required><br><br>
-
-                    <button type="submit">Відправити заявку</button>
+                    <button type="submit" style="display:inline-block; padding:10px 15px; background-color:#C792EA; color:white; text-decoration:none; border-radius:5px; border:none; font-weight:bold; cursor:pointer; width:100%;">Відправити заявку</button>
                 </form>
             </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Світ улюбленців. </p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Світ улюбленців. Усі права захищені.</p>
     </footer>
+
+    <a href="#" class="btn-up">🐾 Вгору</a>
 </body>
 </html>
