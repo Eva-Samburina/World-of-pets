@@ -5,7 +5,7 @@
    ========================================================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F8F6FA; /* Дуже ніжний світло-лавандовий фон замість м'ятного */
+    background-color: #F8F6FA;; 
     background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); 
     color: #444;
     line-height: 1.6; 
@@ -13,11 +13,11 @@ body {
     padding: 0;
 }
 
-a { text-decoration: none; color: #8E44AD; font-weight: bold; } /* Глибокий фіолетовий замість зеленого */
+a { text-decoration: none; color: #8E44AD; font-weight: bold; } /*  фіолетовий замість зеленого */
 a:hover { text-decoration: underline; color: #5B2C6F; }
 
 /* ==========================================================
-   БЛОК 1, ЗАВДАННЯ 2 (БЕМ): Шапка сайту
+   БЛОК 1, ЗАВДАННЯ 2 : Шапка сайту
    ========================================================== */
 .header {
     background: linear-gradient(135deg, #E6E6FA 0%, #C792EA 100%); /* Лавандовий перелив */
@@ -209,7 +209,14 @@ audio {
 @media (max-width: 768px) {
     .main-content { grid-template-columns: 1fr; }
 }
-
+.main-menu {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .main-menu a {
+        padding: 10px 12px; 
+        font-size: 14px; 
+    }
 @media (max-width: 320px) {
     .main-menu { flex-direction: column; display: none; }
     nav::before {
